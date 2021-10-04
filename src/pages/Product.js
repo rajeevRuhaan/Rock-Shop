@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect, Fragment } from "react";
+import { useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getProduct, updateCart, postCart } from "../services/api";
-import { Link } from "react-router-dom";
 import { ADD_TO_CART } from "../actions/types";
 
 const Product = () => {
@@ -60,23 +59,33 @@ const Product = () => {
       console.log("Error is from Products.js handleAddToCart", error);
     }
   };
+  const renderProduct = () => (
+    <Fragment>
+      <div className="card-product" style={{ width: "18rem" }}>
+        <img src={product.image} className="card-img-top" alt={product.name} />
+        <div className="card-body">
+          <div className="d-flex justify-content-between my-3">
+            <h5 className="card-title">{product.name}</h5>
+            <p className="card-text">Price : ${product.price}</p>
+          </div>
+          <div className="d-flex justify-content-between">
+            <Link to="/products" class="btn btn-primary">
+              Back to Products
+            </Link>
+            <button className="btn btn-success" onClick={handleAddToCart}>
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  );
 
   return (
-    <div className="card-product" style={{ width: "18rem" }}>
-      <img src={product.image} className="card-img-top" alt={product.name} />
-      <div className="card-body">
-        <div className="d-flex justify-content-between my-3">
-          <h5 className="card-title">{product.name}</h5>
-          <p className="card-text">Price : ${product.price}</p>
-        </div>
-        <div className="d-flex justify-content-between">
-          <Link to="/products" class="btn btn-primary">
-            Back to Products
-          </Link>
-          <button className="btn btn-success" onClick={handleAddToCart}>
-            Add To Cart
-          </button>
-        </div>
+    <div className="container">
+      <h3 className="text-center mt-3">Product Page</h3>
+      <div className="col">
+        {loading ? <p className="text-danger">Loading...</p> : renderProduct()}
       </div>
     </div>
   );

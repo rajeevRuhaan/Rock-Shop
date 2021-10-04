@@ -1,8 +1,6 @@
-import React from "react";
 import {
   ADD_TO_CART,
   LOAD_CART,
-  POST_CART,
   DELETE_CART_PRODUCT_QUANTITY,
 } from "../actions/types";
 

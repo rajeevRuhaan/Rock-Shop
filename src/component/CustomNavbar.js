@@ -10,7 +10,7 @@ const CustomNavbar = ({ quantity }) => {
         <Navbar.Brand href="/">RockShop</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav>
+          <Nav id="justify-content-end">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/products">Products</Nav.Link>
             <Nav.Link href="/cart">

@@ -96,12 +96,6 @@
     }
   ],
   "cart": [
-    {
-      "id": 12,
-      "image": "https://image.sciencenorway.no/1383714.jpg?imageId=1383714&width=480&height=274",
-      "name": "Eclogite",
-      "price": 200,
-      "quantity": 1
-    }
+    
   ]
 }

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect } from "react";
 import { Route, Switch } from "react-router";
 
 import CustomNavbar from "./component/CustomNavbar";
@@ -13,7 +13,6 @@ import { getCart } from "./services/api";
 
 function App() {
   const dispatch = useDispatch();
-  const [quantity, setQuantity] = useState();
 
   //render the component
   useEffect(() => {
