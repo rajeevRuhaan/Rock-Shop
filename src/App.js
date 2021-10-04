@@ -15,9 +15,9 @@ function App() {
   const dispatch = useDispatch();
 
   //render the component
-  useEffect(() => {
-    laodCart();
-  }, []);
+  // useEffect(() => {
+  //   laodCart();
+  // }, []);
 
   const laodCart = async () => {
     console.log("loadCart");
@@ -31,6 +31,7 @@ function App() {
       console.log("Error from Home, loadCart: ", error);
     }
   };
+  laodCart();
 
   const cartItemCount = useSelector((state) =>
     state.cart.reduce((count, curItem) => {
