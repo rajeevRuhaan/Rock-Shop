@@ -20,7 +20,7 @@ const Home = () => {
                   Igneous Rocks
                   <img
                     src="http://lh3.googleusercontent.com/-eqzNlFail9c/URN81RdqSII/AAAAAAAAIlg/C0bdrsCUm_U/s720/Igneous%252520rocks%252520gabbro%252520andesite%252520pegmatite%252520basalt%252520pumice%252520porphyry%252520obsidian%252520granite%252520tuff.jpg"
-                    atl="igneous rock"
+                    atl="igneous rock from web"
                   />
                 </li>
               </Link>
@@ -29,7 +29,7 @@ const Home = () => {
                   Sedimentary Rocks
                   <img
                     src="http://lh3.googleusercontent.com/-LuCj_kT7svA/UYN61NaWF0I/AAAAAAAAHHg/pQjiKmsIlE8/s720/00753%252520Sedimentary%252520Rocks%252520Collage%252520clay%252520limestone%252520sandstone%252520sylvine%252520chalcedony%252520coal%252520phosphorite%252520conglomerate%252520bauxite.jpg"
-                    atl="sedimentatry rock"
+                    atl="sedimentatry rock from web"
                   />
                 </li>
               </Link>
@@ -38,7 +38,7 @@ const Home = () => {
                   Metamorphic Rocks
                   <img
                     src="https://www.worldatlas.com/r/w1200/upload/2d/be/03/shutterstock-483429490.jpg"
-                    atl="metamorphic rock"
+                    atl="metamorphic rock from web"
                   />
                 </li>
               </Link>
