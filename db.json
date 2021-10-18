@@ -96,6 +96,12 @@
     }
   ],
   "cart": [
-    
+    {
+      "id": 2,
+      "image": "https://i.pinimg.com/originals/18/1d/3a/181d3ad418332cd53406576f8c625a27.jpg",
+      "name": "Olivin Gabbro",
+      "price": 200,
+      "quantity": 1
+    }
   ]
 }

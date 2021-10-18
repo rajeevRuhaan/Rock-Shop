@@ -1,5 +1,6 @@
 import axios from "axios";
-const baseUrl = "http://localhost:3001";
+// const baseUrl = "http://localhost:3001";
+const baseUrl = "https://my-json-server.typicode.com/rajeevRuhaan/db-rockshop";
 
 export const getProducts = async (type) => {
   return await axios.get(`${baseUrl}/product_${type}`);
