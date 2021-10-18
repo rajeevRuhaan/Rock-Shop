@@ -14,11 +14,6 @@ import { getCart } from "./services/api";
 function App() {
   const dispatch = useDispatch();
 
-  //render the component
-  // useEffect(() => {
-  //   laodCart();
-  // }, []);
-
   const laodCart = async () => {
     console.log("loadCart");
     try {
