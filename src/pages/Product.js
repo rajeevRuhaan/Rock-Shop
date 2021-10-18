@@ -29,7 +29,7 @@ const Product = () => {
       }
     };
     loadProduct();
-  }, [id]);
+  }, []);
 
   const [loading, setLoading] = useState(false);
 
