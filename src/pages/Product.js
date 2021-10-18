@@ -17,22 +17,22 @@ const Product = () => {
   });
 
   useEffect(() => {
+    const loadProduct = async () => {
+      try {
+        setLoading(true);
+        const res = await getProduct(type, id);
+        setProduct(res.data);
+        setLoading(false);
+      } catch (error) {
+        console.log("Error form product.js loadProduct:", error);
+        setLoading(false);
+      }
+    };
     loadProduct();
   }, [id]);
 
   const [loading, setLoading] = useState(false);
 
-  const loadProduct = async () => {
-    try {
-      setLoading(true);
-      const res = await getProduct(type, id);
-      setProduct(res.data);
-      setLoading(false);
-    } catch (error) {
-      console.log("Error form product.js loadProduct:", error);
-      setLoading(false);
-    }
-  };
   // handle to add product to cart
   const handleAddToCart = async () => {
     try {
